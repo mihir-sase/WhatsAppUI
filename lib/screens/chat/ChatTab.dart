@@ -2,12 +2,12 @@ import 'package:WhatsAppUI/models/ChatModel.dart';
 import 'package:WhatsAppUI/widgets/ChatItem.dart';
 import 'package:flutter/material.dart';
 
-class ChatScreen extends StatefulWidget {
+class ChatTab extends StatefulWidget {
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  _ChatTabState createState() => _ChatTabState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _ChatTabState extends State<ChatTab> {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(

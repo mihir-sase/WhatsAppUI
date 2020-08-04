@@ -1,10 +1,11 @@
-
-import 'file:///D:/PF/FlutterProjects/WhatsAppUI/lib/screens/home/HomeScreen.dart';
-import 'package:WhatsAppUI/screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
-class RouteGenerator {
+import '../screens/SplashScreen.dart';
+import '../screens/chat/ChatScreen.dart';
+import '../screens/home/HomeScreen.dart';
+import '../screens/chat/ProfileScreen.dart';
 
+class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     // Getting arguments passed in while calling Navigator.pushNamed
     final args = settings.arguments;
@@ -13,8 +14,11 @@ class RouteGenerator {
       case '/':
         return MaterialPageRoute(builder: (_) => SplashScreen());
       case '/home':
-        return MaterialPageRoute(
-          builder: (_) => HomeScreen());
+        return MaterialPageRoute(builder: (_) => HomeScreen());
+      case '/chat':
+        return MaterialPageRoute(builder: (_) => ChatScreen(args));
+      case '/profile':
+        return MaterialPageRoute(builder: (_) => ProfileScreen(args));
 
       default:
         return _errorRoute();

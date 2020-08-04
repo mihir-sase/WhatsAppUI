@@ -2,12 +2,12 @@ import 'package:WhatsAppUI/models/CallsModel.dart';
 import 'package:WhatsAppUI/widgets/CallsItem.dart';
 import 'package:flutter/material.dart';
 
-class CallsScreen extends StatefulWidget {
+class CallsTab extends StatefulWidget {
   @override
-  _CallsScreenState createState() => _CallsScreenState();
+  _CallsTabState createState() => _CallsTabState();
 }
 
-class _CallsScreenState extends State<CallsScreen> {
+class _CallsTabState extends State<CallsTab> {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(

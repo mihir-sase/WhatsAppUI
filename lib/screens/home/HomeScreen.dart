@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'CallsScreen.dart';
-import 'ChatScreen.dart';
-import 'StatusScreen.dart';
+import '../calls/CallsTab.dart';
+import '../chat/ChatTab.dart';
+import '../status/StatusTab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -60,9 +60,9 @@ class _HomeScreenState extends State<HomeScreen>
       body: TabBarView(
         children: [
           new Text("This is call Tab View"),
-          ChatScreen(),
-          StatusScreen(),
-          CallsScreen(),
+          ChatTab(),
+          StatusTab(),
+          CallsTab(),
         ],
         controller: _tabController,
       ),

@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 3000), () {
-      Navigator.of(context).pushReplacementNamed('/home',arguments: 'Hello there from the splash screen!',);
+      Navigator.of(context).pushReplacementNamed('/home');
     });
   }
 

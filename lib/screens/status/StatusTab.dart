@@ -3,12 +3,12 @@ import 'package:WhatsAppUI/widgets/StatusItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class StatusScreen extends StatefulWidget {
+class StatusTab extends StatefulWidget {
   @override
-  _StatusScreenState createState() => _StatusScreenState();
+  _StatusTabState createState() => _StatusTabState();
 }
 
-class _StatusScreenState extends State<StatusScreen> {
+class _StatusTabState extends State<StatusTab> {
   @override
   Widget build(BuildContext context) {
     return Column(

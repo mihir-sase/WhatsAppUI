@@ -8,6 +8,7 @@ class ChatItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: (){Navigator.of(context).pushNamed('/chat',arguments: item);},
       leading: Container(
         width: 60,
         height: 60,
