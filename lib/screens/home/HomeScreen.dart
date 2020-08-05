@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen>
     switch (_tabController.index) {
       case 1:
         return FloatingActionButton(
-          onPressed: null,
+          onPressed: (){Navigator.of(context).pushNamed('/newChat');},
           backgroundColor: Colors.teal,
           child: Icon(Icons.message),
         );

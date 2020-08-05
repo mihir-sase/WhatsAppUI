@@ -4,6 +4,7 @@ import '../screens/SplashScreen.dart';
 import '../screens/chat/ChatScreen.dart';
 import '../screens/home/HomeScreen.dart';
 import '../screens/chat/ProfileScreen.dart';
+import '../screens/chat/NewChatScreen.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -19,6 +20,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => ChatScreen(args));
       case '/profile':
         return MaterialPageRoute(builder: (_) => ProfileScreen(args));
+      case '/newChat':
+        return MaterialPageRoute(builder: (_) => NewChatScreen());
 
       default:
         return _errorRoute();
